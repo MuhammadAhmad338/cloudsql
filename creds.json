@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "famous-rhythm-362419",
+  "private_key_id": "b06522b4a90af18f460f6c6fdadf0adc0504557e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4SgsV0ACWN3O9\nDSvBkcqvHCCkoHtCkXWizLbWmiP8O4P9VS6yBnr0iXa2BNPo4hGQgv1Y2QxV/U1p\nBVCBXXrzpJiJ2bNNS/ecBPE4AoljUeqWp4dgvIH98FtSyFpA1IN8SOj++RGwGDBQ\nb1b15rxKRVsh0s0shXvV3b/QRGpFu0jYDTjYB9v9NGjdj89cF6xZ8DXOkY+NXlre\nBA+QGbdu7jXyt6Jcyj4BZ7gTodwcX6FoMZNQYsiWfnyFlDkPL/cu6pbxCdfIX5aF\nb510YgkbXo/XL5MnTarDLcBmH4iv8RETRmubEx7TEGE97hu5pgX9mf6sQ24EaGqv\nLqpKBlvrAgMBAAECggEAIaQmlONFECbsQlESsUHHcaLdVKAVEChUhJUBNXiq5AML\nS6YOoaHsNRKY8I4+Ds+h7DL1Q5BPn6zfQjIdqZfid3KPA+8RO6WH/FusmxBfexl7\njOflHyQaSLxlN13ql9YTcI8wtUbLU01/GFfS1I27xoUVpz1/hcaSPg6+UqsCiVrg\n7seQoFvZ2YoVl9Uw39INROS+aHQBchSPzRjCOj1cK7EPUOqILEoPAW/jo/+hj17v\nK7tijkvvqOM1rapGTH3gCo0nJW6IPCufaMwkmEn/tluRISbNlGNz9M8/yZIsMqMC\nbLzrNyc2vBBOk+ubs3jOiaA4O1cjcTMbl0OQjfBqNQKBgQDn+vSLRnYpK+u5TsmL\n6njNloX7arSYzBccCwhDB3kmeKcl6JksmWfFSr9A1x17pILxQAEH1hk8gaDYQfZZ\nKlg6jKEpiYP8kTVEaEjz/LWmnN4Xi1Zm2PD2Z455LcIzDRa7WeFyiR9TI8glG/ZB\n/1UbXvvoMlsZQU1+qn6r/zTclQKBgQDLXvPoJf/wTueepN96IJNd2YeqdclCE1oO\noatuJTKUjkw4MbWVnlxFN+KoOEOBmocSd+39VbT1HpKgyiDP8kb3ExhbRzJd5ung\nsXkaCQqiUWjNtBIeuYZT6Nupl7IGEfhuMCB9ACPAfMUy2gMSRXsEhhmidqAracQE\nSW/w6E+2fwKBgGziXPAWZZXTmLQE6BL1Pjh5Q3AL2LKzcNFn2DvmARZuoT3o3CST\n6KIxAG4Fyj/jqtZjzVgJRRUiXwXCiEe32Wu54FdnxXzCB3eRX1SuM/D9Rj1U2Hwz\nrX5qgvQb50AhD59mg6xH8l0KuYG5iy/VEfRj8+c744iKHz6p9gTzJ7O1AoGBAIFi\nvKyimG1r1eJRpLhPR1J7Fdv2Kf/2zeHnK2jdE4v96DIMNimlYbDL+FDr0s7+4BZ4\n5Jm7UHBubf0L+8owqsOAi4tvBXVGdt90KcbNn81bG+FbQff4MqTpze7cyu8fub1o\nsxKz5wsMlm1e1HtoZvae1mpNLGPSW1oa2rQbKLPDAoGAJzup/CMz6nhabL7ySvem\nsECw4UumgcpcWToOPxQGFSbWKgSK/KBg0lNZZIXGnfPpYfPkRnQT+iGvMjJx+kRw\nk7cOS9DbH1uVCdZjNS7/rJdlPxDS5Nv0Gh8q8NpKvWIYVIbEYuhbc2v1W2WimE0f\nMzuAXvpNop+EB8LugqSXPhU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloudsql@famous-rhythm-362419.iam.gserviceaccount.com",
+  "client_id": "110233553986056154227",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloudsql%40famous-rhythm-362419.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
