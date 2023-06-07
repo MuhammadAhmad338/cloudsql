@@ -5,13 +5,9 @@ const app = express();
 app.use(express.json());
 const port = process.env.PORT || 8080;
 
-
-
 app.listen(port, () => {
     console.log(`Server is listening to this ${port}`);
 });
-
-
 
 app.get('/', (req, res) => {
     res.json({ status: "Bark Bark! Ready to roll" });
@@ -52,11 +48,4 @@ var pool = mysql.createPool({
     socketPath: '/cloudsql/famous-rhythm-362419:us-central1:barkbark', 
    // e.g. '/cloudsql/project:region:instance'
     // Specify additional properties here.
-});
-pool.getConnection((err, connect ) => {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("Connected@", connect);
-    }
 });
