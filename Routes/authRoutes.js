@@ -4,10 +4,8 @@ const bcrypt = require("bcrypt");
 const dotenv = require("dotenv");
 const mysql = require("mysql2");
 const jwt = require("jsonwebtoken");
-const e = require("express");
 
 dotenv.config();
-const secret = "my-secret-key"
 
 authRouter.get("/allUsers", async (req, res) => {
     const query = 'SELECT * FROM users';
@@ -52,7 +50,7 @@ authRouter.post('/signIn', async (req, res) => {
     const password = req.body.password;
     const query = "SELECT * FROM users WHERE username = ?";
 
-    pool.query(query, [username], (error, results) => {
+    pool.query(query, [username], async (error, results) => {
         if (error) {
             res.status(500).json({ status: "Error signingIn" });
             return
@@ -62,9 +60,9 @@ authRouter.post('/signIn', async (req, res) => {
             return;
         }
         const user = results[0];
-        const userSigned = bcrypt.compare(password, user.password);
+        const userSigned = await bcrypt.compare(password, user.password);
         if (userSigned) {
-            const token = jwt.sign({ username }, secret, { expiresIn: 60 * 60 });
+            const token = jwt.sign({ username }, process.env.SECRET, { expiresIn: 60 * 60 });
             res.json({ token });
         } else {
             res.json({ status: "User is not signedIn and check your credentials" });
@@ -86,7 +84,7 @@ authRouter.post('/signUp', async (req, res) => {
     const query = 'SELECT * FROM users WHERE email = ?';
     pool.query(query, [email], (error, results) => {
         if (error) {
-            res.status(500).json({error:  "Some error occured!"});
+            res.status(500).json({ error: "Some error occured!" });
             return;
         }
         const user = results[0];
@@ -98,10 +96,10 @@ authRouter.post('/signUp', async (req, res) => {
                 if (!results) {
                     res.json({ status: error });
                 } else {
-                    const token = jwt.sign({ username }, secret, { expiresIn: 60 * 60 });
+                    const token = jwt.sign({ username }, process.env.SECRET, { expiresIn: 60 * 60 });
                     res.json({ token });
                 }
-            })
+            });
         }
     });
 });
